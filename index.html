@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MI4MedFM | Mechanistic Interpretability for Medical Foundation Models</title>
-  <meta name="description" content="MI4MedFM is a MICCAI 2026 workshop on mechanistic interpretability for medical foundation models, focused on internal analysis, validation, debugging, and safer clinical deployment." />
+  <meta name="description"
+    content="MI4MedFM is a MICCAI 2026 workshop on mechanistic interpretability for medical foundation models, focused on internal analysis, validation, debugging, and safer clinical deployment." />
   <link rel="icon" type="image/png" href="assets/images/brand/favicon.png" />
   <link rel="preload" as="image" href="assets/images/brand/logo-wordmark.png" />
   <link rel="preload" as="image" href="assets/images/speakers/karim-lekadir.jpg" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="interactive.css" />
 </head>
+
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <div class="progress-bar" aria-hidden="true"></div>
@@ -49,7 +52,8 @@
           <span class="eyebrow">MICCAI 2026 Workshop</span>
           <h1>Mechanistic Interpretability for <span>Medical Foundation Models</span></h1>
           <p class="hero-subtitle">
-            A half-day MICCAI workshop focused on how medical foundation models compute, where they fail, and how mechanistic interpretability can make them more reliable for clinical use.
+            A half-day MICCAI workshop focused on how medical foundation models compute, where they fail, and how
+            mechanistic interpretability can make them more reliable for clinical use.
           </p>
 
           <div class="hero-meta">
@@ -89,7 +93,8 @@
 
             <div class="teaser-scene" aria-hidden="true">
               <div class="hero-node input-node">
-                <img src="assets/images/sample-scan.png" class="hero-node-icon" alt="Medical Scan" style="object-fit: cover;" />
+                <img src="assets/images/sample-scan.png" class="hero-node-icon" alt="Medical Scan"
+                  style="object-fit: cover;" />
                 <span>Medical image</span>
               </div>
 
@@ -154,10 +159,14 @@
           <span class="section-kicker">Overview</span>
           <h2>Why this workshop matters now</h2>
           <p>
-            Medical foundation models are becoming central to imaging and multimodal clinical AI, but high-stakes deployment needs more than saliency maps or attention plots. MI4MedFM centers mechanistic interpretability: understanding the internal computations that generate model behavior.
+            Medical foundation models are becoming central to imaging and multimodal clinical AI, but high-stakes
+            deployment needs more than saliency maps or attention plots. MI4MedFM centers mechanistic interpretability:
+            understanding the internal computations that generate model behavior.
           </p>
           <p>
-            The workshop creates a focused MICCAI forum for methods such as sparse autoencoders, circuit discovery, activation patching, causal tracing, steering, and weight-space analysis, while keeping the discussion tightly connected to clinical validity, robustness, and deployment safety.
+            The workshop creates a focused MICCAI forum for methods such as sparse autoencoders, circuit discovery,
+            activation patching, causal tracing, steering, and weight-space analysis, while keeping the discussion
+            tightly connected to clinical validity, robustness, and deployment safety.
           </p>
         </div>
 
@@ -177,7 +186,8 @@
             </article>
             <article>
               <strong>Value</strong>
-              <p>A clear bridge from internal model analysis to evidence, intervention, and trustworthy clinical use.</p>
+              <p>A clear bridge from internal model analysis to evidence, intervention, and trustworthy clinical use.
+              </p>
             </article>
           </div>
         </aside>
@@ -190,7 +200,8 @@
           <span class="section-kicker">Workshop focus</span>
           <h2>Four core pillars of MI4MedFM</h2>
           <p>
-            Our scientific agenda is structured around four interlocking goals that translate mechanistic interpretability into robust clinical practice.
+            Our scientific agenda is structured around four interlocking goals that translate mechanistic
+            interpretability into robust clinical practice.
           </p>
         </div>
 
@@ -207,7 +218,8 @@
               <span class="mini-pill" id="pillar-label">Pillar 1</span>
               <h3 id="pillar-title">Inspect internal model mechanisms</h3>
               <p id="pillar-text">
-                Understand what features, subcircuits, and latent representations medical foundation models rely on when producing clinically relevant behavior.
+                Understand what features, subcircuits, and latent representations medical foundation models rely on when
+                producing clinically relevant behavior.
               </p>
               <ul id="pillar-points">
                 <li>Sparse autoencoders and feature discovery</li>
@@ -237,23 +249,36 @@
       <div class="container interactive-container reveal">
         <div class="interactive-header">
           <h2>Interactive 3D Layer Analysis</h2>
-          <p>Hover over the foundation model representation below to expand the hidden layers and inspect the mechanistic computations driving clinical predictions.</p>
+          <p>Hover over the foundation model representation below to expand the hidden layers and inspect the
+            mechanistic computations driving clinical predictions.</p>
         </div>
         <div class="model-showcase">
           <div class="layer layer-3">
             <div class="layer-label">Final Output & Concepts</div>
             <div class="layer-node-grid">
-              <div class="node"></div><div class="node"></div><div class="node"></div>
-              <div class="node"></div><div class="node"></div><div class="node"></div>
-              <div class="node"></div><div class="node"></div><div class="node"></div>
+              <div class="node"></div>
+              <div class="node"></div>
+              <div class="node"></div>
+              <div class="node"></div>
+              <div class="node"></div>
+              <div class="node"></div>
+              <div class="node"></div>
+              <div class="node"></div>
+              <div class="node"></div>
             </div>
           </div>
           <div class="layer layer-2">
             <div class="layer-label">Sparse Autoencoder Features</div>
             <div class="layer-node-grid">
-              <div class="node"></div><div class="node"></div><div class="node"></div>
-              <div class="node"></div><div class="node"></div><div class="node"></div>
-              <div class="node"></div><div class="node"></div><div class="node"></div>
+              <div class="node"></div>
+              <div class="node"></div>
+              <div class="node"></div>
+              <div class="node"></div>
+              <div class="node"></div>
+              <div class="node"></div>
+              <div class="node"></div>
+              <div class="node"></div>
+              <div class="node"></div>
             </div>
             <div class="connection-beam" style="bottom: 100%; left: 30%;"></div>
             <div class="connection-beam" style="bottom: 100%; right: 30%;"></div>
@@ -261,15 +286,21 @@
           <div class="layer layer-1">
             <div class="layer-label">Early Attention Heads</div>
             <div class="layer-node-grid">
-              <div class="node"></div><div class="node"></div><div class="node"></div>
-              <div class="node"></div><div class="node"></div><div class="node"></div>
-              <div class="node"></div><div class="node"></div><div class="node"></div>
+              <div class="node"></div>
+              <div class="node"></div>
+              <div class="node"></div>
+              <div class="node"></div>
+              <div class="node"></div>
+              <div class="node"></div>
+              <div class="node"></div>
+              <div class="node"></div>
+              <div class="node"></div>
             </div>
             <div class="connection-beam" style="bottom: 100%; left: 50%;"></div>
           </div>
         </div>
         <div class="interactive-tooltip">
-           <i>🔍</i> Hover over the network to reveal layers
+          <i>🔍</i> Hover over the network to reveal layers
         </div>
       </div>
     </section>
@@ -280,7 +311,8 @@
           <span class="section-kicker">Topics</span>
           <h2>Topics of Interest</h2>
           <p>
-            We welcome submissions across a wide range of themes bridging foundation model interpretability with safety and deployment.
+            We welcome submissions across a wide range of themes bridging foundation model interpretability with safety
+            and deployment.
           </p>
         </div>
 
@@ -294,7 +326,8 @@
           <article class="topic-card">
             <span class="topic-label">Faithfulness</span>
             <h3>Clinically meaningful validation</h3>
-            <p>Tests that determine whether discovered mechanisms align with trusted medical concepts and downstream behavior.</p>
+            <p>Tests that determine whether discovered mechanisms align with trusted medical concepts and downstream
+              behavior.</p>
             <div class="topic-bar"><span style="width: 82%"></span></div>
           </article>
           <article class="topic-card">
@@ -306,19 +339,22 @@
           <article class="topic-card">
             <span class="topic-label">Intervention</span>
             <h3>Editing, steering, and control</h3>
-            <p>Using mechanism-level insight to improve robustness, correct behavior, and reduce harmful failure modes.</p>
+            <p>Using mechanism-level insight to improve robustness, correct behavior, and reduce harmful failure modes.
+            </p>
             <div class="topic-bar"><span style="width: 84%"></span></div>
           </article>
           <article class="topic-card">
             <span class="topic-label">Deployment</span>
             <h3>Monitoring unsafe states in practice</h3>
-            <p>Interpretability-guided monitoring and uncertainty-aware signals for safer clinical deployment settings.</p>
+            <p>Interpretability-guided monitoring and uncertainty-aware signals for safer clinical deployment settings.
+            </p>
             <div class="topic-bar"><span style="width: 74%"></span></div>
           </article>
           <article class="topic-card">
             <span class="topic-label">Tooling</span>
             <h3>Scalable, usable open infrastructure</h3>
-            <p>Frameworks and workflows that make mechanistic analysis practical for medical imaging and multimodal MedFMs.</p>
+            <p>Frameworks and workflows that make mechanistic analysis practical for medical imaging and multimodal
+              MedFMs.</p>
             <div class="topic-bar"><span style="width: 76%"></span></div>
           </article>
         </div>
@@ -331,7 +367,8 @@
           <span class="section-kicker">Program</span>
           <h2>Workshop Program</h2>
           <p>
-            The half-day schedule features an invited keynote, oral presentations, dynamic poster sessions, and community discussions.
+            The half-day schedule features an invited keynote, oral presentations, dynamic poster sessions, and
+            community discussions.
           </p>
         </div>
 
@@ -347,7 +384,8 @@
             </article>
             <article>
               <strong>Poster interaction</strong>
-              <p>Poster-first visibility, direct discussion, and opportunities for clinicians and ML researchers to connect.</p>
+              <p>Poster-first visibility, direct discussion, and opportunities for clinicians and ML researchers to
+                connect.</p>
             </article>
             <article>
               <strong>Closing synthesis</strong>
@@ -367,7 +405,8 @@
               <span class="schedule-time">09:10</span>
               <div class="schedule-card">
                 <h3>Keynote session</h3>
-                <p>One flagship invited talk focused on trustworthy medical AI, interpretability, and clinical reliability.</p>
+                <p>One flagship invited talk focused on trustworthy medical AI, interpretability, and clinical
+                  reliability.</p>
               </div>
             </article>
             <article class="schedule-item break-item">
@@ -395,7 +434,8 @@
               <span class="schedule-time">11:50</span>
               <div class="schedule-card">
                 <h3>Closing discussion</h3>
-                <p>Open questions, community priorities, and next steps for mechanistic interpretability in medical AI.</p>
+                <p>Open questions, community priorities, and next steps for mechanistic interpretability in medical AI.
+                </p>
               </div>
             </article>
           </div>
@@ -421,7 +461,8 @@
               <h3>Karim Lekadir</h3>
               <p class="speaker-role">Trustworthy medical AI researcher</p>
               <p>
-                His pioneering research bridges deep learning robustness with ethical clinical translation, establishing critical benchmarks for fairness and certainty in medical deployments.
+                His pioneering research bridges deep learning robustness with ethical clinical translation, establishing
+                critical benchmarks for fairness and certainty in medical deployments.
               </p>
             </div>
           </article>
@@ -435,7 +476,8 @@
           <span class="section-kicker">Organizers</span>
           <h2>Organizing Committee</h2>
           <p>
-            Our international committee unites expertise in medical image analysis, foundation models, and trustworthy artificial intelligence.
+            Our international committee unites expertise in medical image analysis, foundation models, and trustworthy
+            artificial intelligence.
           </p>
         </div>
 
@@ -501,19 +543,19 @@
             </div>
           </article>
           <article class="organizer-card" data-category="researcher">
-            <img src="assets/images/organizers/rishabh-lalla.jpg" alt="Rishabh Lalla" />
+            <img src="assets/images/organizers/ufaq-khan.jpg" alt="Ufaq Khan" />
             <div>
               <span class="role-chip">Researcher</span>
-              <h3>Rishabh Lalla</h3>
+              <h3>Ufaq Khan</h3>
               <p>Ph.D. Student</p>
               <span>MBZUAI</span>
             </div>
           </article>
           <article class="organizer-card" data-category="researcher">
-            <img src="assets/images/organizers/ufaq-khan.jpg" alt="Ufaq Khan" />
+            <img src="assets/images/organizers/rishabh-lalla.jpg" alt="Rishabh Lalla" />
             <div>
               <span class="role-chip">Researcher</span>
-              <h3>Ufaq Khan</h3>
+              <h3>Rishabh Lalla</h3>
               <p>Ph.D. Student</p>
               <span>MBZUAI</span>
             </div>
@@ -564,7 +606,8 @@
           <span class="section-kicker">Submission</span>
           <h2>Call for Papers</h2>
           <p>
-            We invite submissions across two tracks. All accepted papers will be presented, with top-tier submissions selected for oral presentation.
+            We invite submissions across two tracks. All accepted papers will be presented, with top-tier submissions
+            selected for oral presentation.
           </p>
         </div>
 
@@ -592,7 +635,7 @@
       </div>
     </section>
 
-    </main>
+  </main>
 
   <footer class="site-footer">
     <div class="container footer-shell">
@@ -610,4 +653,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>
