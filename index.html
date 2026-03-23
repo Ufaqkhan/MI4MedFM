@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MI4MedFM | Mechanistic Interpretability for Medical Foundation Models</title>
-  <meta name="description" content="MI4MedFM is a MICCAI 2026 workshop on mechanistic interpretability for medical foundation models, focused on internal model analysis, validation, debugging, and safe clinical deployment." />
+  <meta name="description"
+    content="MI4MedFM is a MICCAI 2026 workshop on mechanistic interpretability for medical foundation models, focused on internal model analysis, validation, debugging, and safe clinical deployment." />
   <link rel="icon" type="image/png" href="assets/images/brand/favicon.png" />
   <link rel="preload" as="image" href="assets/images/brand/logo-wordmark.png" />
   <link rel="preload" as="image" href="assets/images/organizers/mohammad-yaqub.jpg" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="teaser.css" />
+  <link rel="stylesheet" href="interactive.css" />
 </head>
+
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <div class="progress-bar" aria-hidden="true"></div>
@@ -36,10 +40,10 @@
         <a href="#program">Program</a>
         <a href="#organizers">Organizers</a>
         <a href="#submission">Submission</a>
-        
+
       </nav>
 
-      
+
     </div>
   </header>
 
@@ -50,7 +54,8 @@
           <span class="pill pill-hero">MICCAI 2026 Workshop</span>
           <h1>Mechanistic Interpretability for <span>Medical Foundation Models</span></h1>
           <p class="hero-subtitle">
-            MI4MedFM is a half-day, in-person workshop dedicated to understanding how medical foundation models compute, fail, and can be improved through mechanistic interpretability.
+            MI4MedFM is a half-day, in-person workshop dedicated to understanding how medical foundation models compute,
+            fail, and can be improved through mechanistic interpretability.
           </p>
 
           <div class="hero-meta" aria-label="Workshop metadata">
@@ -78,52 +83,52 @@
           <div class="orb orb-c"></div>
 
           <div class="teaser-wrapper">
-    <div class="teaser-scene">
-        <!-- Medical Image Node -->
-        <div class="node-input">
-            <svg viewBox="0 0 24 24" fill="none" class="icon" stroke="currentColor" stroke-width="2">
-                <path d="M4 4h16v16H4zM4 12l5-5 5 5M16 12l4-4M14 16h6"></path>
-            </svg>
-            <span>Med Image</span>
-        </div>
+            <div class="teaser-scene">
+              <!-- Medical Image Node -->
+              <div class="node-input">
+                <svg viewBox="0 0 24 24" fill="none" class="icon" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16v16H4zM4 12l5-5 5 5M16 12l4-4M14 16h6"></path>
+                </svg>
+                <span>Med Image</span>
+              </div>
 
-        <!-- Data Flow 1 -->
-        <div class="data-flow flow-in">
-            <div class="particle p1"></div>
-            <div class="particle p2"></div>
-        </div>
+              <!-- Data Flow 1 -->
+              <div class="data-flow flow-in">
+                <div class="particle p1"></div>
+                <div class="particle p2"></div>
+              </div>
 
-        <!-- FM Box -->
-        <div class="fm-box">
-            <div class="fm-label">MedFM</div>
-            <div class="fm-layers">
-                <div class="fm-layer"></div>
-                <div class="fm-layer highlight-layer"></div>
-                <div class="fm-layer"></div>
-            </div>
-            <!-- Magnifying Glass / Interpretability focus -->
-            <div class="mechanistic-lens">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <!-- FM Box -->
+              <div class="fm-box">
+                <div class="fm-label">MedFM</div>
+                <div class="fm-layers">
+                  <div class="fm-layer"></div>
+                  <div class="fm-layer highlight-layer"></div>
+                  <div class="fm-layer"></div>
+                </div>
+                <!-- Magnifying Glass / Interpretability focus -->
+                <div class="mechanistic-lens">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <circle cx="11" cy="11" r="8"></circle>
                     <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                </svg>
-                <div class="lens-beam"></div>
+                  </svg>
+                  <div class="lens-beam"></div>
+                </div>
+              </div>
+
+              <!-- Data Flow 2 -->
+              <div class="data-flow flow-out">
+                <div class="particle p3"></div>
+                <div class="particle p4"></div>
+              </div>
+
+              <!-- Output Node -->
+              <div class="node-output">
+                <div class="output-text">Diagnosis</div>
+                <div class="output-text mechanism-text">Mechanism</div>
+              </div>
             </div>
-        </div>
-
-        <!-- Data Flow 2 -->
-        <div class="data-flow flow-out">
-            <div class="particle p3"></div>
-            <div class="particle p4"></div>
-        </div>
-
-        <!-- Output Node -->
-        <div class="node-output">
-            <div class="output-text">Diagnosis</div>
-            <div class="output-text mechanism-text">Mechanism</div>
-        </div>
-    </div>
-</div>
+          </div>
         </div>
       </div>
     </section>
@@ -134,10 +139,17 @@
           <span class="section-kicker">Overview</span>
           <h2>Why MI4MedFM matters</h2>
           <p>
-            Medical foundation models are rapidly becoming core infrastructure for medical imaging and multimodal clinical AI. Yet high-stakes use requires more than post-hoc explanations. MI4MedFM focuses on <strong>mechanistic interpretability</strong>—reverse-engineering the underlying algorithms learned by models. By emphasizing rigorous internal analysis via techniques like sparse autoencoders (SAEs), circuit discovery, and activation patching, we aim to transform black-box medical foundation models into robust, auditable clinical systems.
+            Medical foundation models are rapidly becoming core infrastructure for medical imaging and multimodal
+            clinical AI. Yet high-stakes use requires more than post-hoc explanations. MI4MedFM focuses on
+            <strong>mechanistic interpretability</strong>—reverse-engineering the underlying algorithms learned by
+            models. By emphasizing rigorous internal analysis via techniques like sparse autoencoders (SAEs), circuit
+            discovery, and activation patching, we aim to transform black-box medical foundation models into robust,
+            auditable clinical systems.
           </p>
           <p>
-            The workshop is designed to bridge mechanistic interpretability researchers with the MICCAI community, including clinicians, safety researchers, and industry practitioners, and to build a shared agenda for robust, clinically grounded evaluation and deployment.
+            The workshop is designed to bridge mechanistic interpretability researchers with the MICCAI community,
+            including clinicians, safety researchers, and industry practitioners, and to build a shared agenda for
+            robust, clinically grounded evaluation and deployment.
           </p>
 
           <div class="insight-rail">
@@ -159,7 +171,8 @@
               <span class="insight-number">03</span>
               <div>
                 <h3>Outcome</h3>
-                <p>A robust roadmap advancing state-of-the-art mechanistic methods (SAEs, circuits, steering) tailored for high-stakes, multimodal clinical environments.</p>
+                <p>A robust roadmap advancing state-of-the-art mechanistic methods (SAEs, circuits, steering) tailored
+                  for high-stakes, multimodal clinical environments.</p>
               </div>
             </article>
           </div>
@@ -173,7 +186,8 @@
           <div class="feature-list">
             <article>
               <h4>Format</h4>
-              <p>1 invited in-person keynote, contributed oral talks, poster session, networking breaks, and closing discussion.</p>
+              <p>1 invited in-person keynote, contributed oral talks, poster session, networking breaks, and closing
+                discussion.</p>
             </article>
             <article>
               <h4>Proceedings</h4>
@@ -181,9 +195,10 @@
             </article>
             <article>
               <h4>Clinical emphasis</h4>
-              <p>Robustness under domain shift, bias and spurious correlation control, safety monitoring, and clinically grounded validation.</p>
+              <p>Robustness under domain shift, bias and spurious correlation control, safety monitoring, and clinically
+                grounded validation.</p>
             </article>
-            </div>
+          </div>
         </aside>
       </div>
     </section>
@@ -193,14 +208,17 @@
         <div class="section-heading reveal">
           <span class="section-kicker">Why now</span>
           <h2>Positioned at the intersection of two fast-moving communities</h2>
-          <p>MI4MedFM responds to a clear gap: medical foundation-model momentum is accelerating at MICCAI, while mechanistic interpretability is maturing rapidly in broader ML/CV. The workshop is designed to connect those threads around trustworthy clinical deployment.</p>
+          <p>MI4MedFM responds to a clear gap: medical foundation-model momentum is accelerating at MICCAI, while
+            mechanistic interpretability is maturing rapidly in broader ML/CV. The workshop is designed to connect those
+            threads around trustworthy clinical deployment.</p>
         </div>
 
         <div class="bridge-layout">
           <article class="bridge-card reveal">
             <span class="eyebrow-label">MICCAI momentum</span>
             <h3>Foundation-model work is becoming central to medical AI</h3>
-            <p>Recent MICCAI workshop activity around MedAGI, MLLM, ELAMI, and related communities shows strong demand for foundation-model research in medical imaging and multimodal clinical AI.</p>
+            <p>Recent MICCAI workshop activity around MedAGI, MLLM, ELAMI, and related communities shows strong demand
+              for foundation-model research in medical imaging and multimodal clinical AI.</p>
             <div class="chip-cloud">
               <span>Medical imaging</span>
               <span>Multimodal clinical AI</span>
@@ -222,7 +240,8 @@
           <article class="bridge-card reveal">
             <span class="eyebrow-label">Mechanistic momentum</span>
             <h3>Interpretability is moving from post-hoc visuals to internal causal analysis</h3>
-            <p>Across major ML/CV venues, mechanistic interpretability is advancing through circuit discovery, causal tracing, sparse autoencoders, representation steering, and weight-space analysis.</p>
+            <p>Across major ML/CV venues, mechanistic interpretability is advancing through circuit discovery, causal
+              tracing, sparse autoencoders, representation steering, and weight-space analysis.</p>
             <div class="chip-cloud">
               <span>Circuit discovery</span>
               <span>Activation patching</span>
@@ -246,7 +265,8 @@
           <article class="difference-card reveal">
             <span class="difference-index">C</span>
             <h3>From generic validation to clinically grounded evidence</h3>
-            <p>Benchmark mechanisms against clinical concepts, controlled datasets, synthetic tasks, and downstream metrics.</p>
+            <p>Benchmark mechanisms against clinical concepts, controlled datasets, synthetic tasks, and downstream
+              metrics.</p>
           </article>
         </div>
       </div>
@@ -257,35 +277,83 @@
         <div class="section-heading reveal">
           <span class="section-kicker">Objectives</span>
           <h2>What the workshop aims to achieve</h2>
-          <p>A focused agenda for methods, evaluation, interventions, and community-building around mechanistic interpretability for medical foundation models.</p>
+          <p>A focused agenda for methods, evaluation, interventions, and community-building around mechanistic
+            interpretability for medical foundation models.</p>
         </div>
 
         <div class="objective-grid">
           <article class="objective-card reveal">
             <span class="objective-number">1</span>
             <h3>Bridge communities</h3>
-            <p>Connect mechanistic interpretability researchers with medical imaging, clinical AI, and clinician audiences at MICCAI.</p>
+            <p>Connect mechanistic interpretability researchers with medical imaging, clinical AI, and clinician
+              audiences at MICCAI.</p>
           </article>
           <article class="objective-card reveal">
             <span class="objective-number">2</span>
             <h3>Advance methods</h3>
-            <p>Adapt circuit discovery, causal tracing, SAEs, representation steering, and weight-space analysis to MedFMs.</p>
+            <p>Adapt circuit discovery, causal tracing, SAEs, representation steering, and weight-space analysis to
+              MedFMs.</p>
           </article>
           <article class="objective-card reveal">
             <span class="objective-number">3</span>
             <h3>Improve evaluation</h3>
-            <p>Move beyond qualitative visualization toward clinically meaningful, testable, and reproducible validation.</p>
+            <p>Move beyond qualitative visualization toward clinically meaningful, testable, and reproducible
+              validation.</p>
           </article>
           <article class="objective-card reveal">
             <span class="objective-number">4</span>
             <h3>Enable interventions</h3>
-            <p>Explore model editing, debiasing, privacy-aware adaptation, uncertainty calibration, and inference-time monitoring.</p>
+            <p>Explore model editing, debiasing, privacy-aware adaptation, uncertainty calibration, and inference-time
+              monitoring.</p>
           </article>
           <article class="objective-card reveal">
             <span class="objective-number">5</span>
             <h3>Create community artifacts</h3>
-            <p>Release open-source notebooks, baselines, and a curated open-problems and datasets list for the field.</p>
+            <p>Release open-source notebooks, baselines, and a curated open-problems and datasets list for the field.
+            </p>
           </article>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section interactive-section">
+      <div class="container interactive-container reveal">
+        <div class="interactive-header">
+          <h2>Interactive 3D Layer Analysis</h2>
+          <p>Hover over the foundation model representation below to expand the hidden layers and inspect the mechanistic computations driving clinical predictions.</p>
+        </div>
+        <div class="model-showcase">
+          <div class="layer layer-3">
+            <div class="layer-label">Final Output & Concepts</div>
+            <div class="layer-node-grid">
+              <div class="node"></div><div class="node"></div><div class="node"></div>
+              <div class="node"></div><div class="node"></div><div class="node"></div>
+              <div class="node"></div><div class="node"></div><div class="node"></div>
+            </div>
+          </div>
+          <div class="layer layer-2">
+            <div class="layer-label">Sparse Autoencoder Features</div>
+            <div class="layer-node-grid">
+              <div class="node"></div><div class="node"></div><div class="node"></div>
+              <div class="node"></div><div class="node"></div><div class="node"></div>
+              <div class="node"></div><div class="node"></div><div class="node"></div>
+            </div>
+            <div class="connection-beam" style="bottom: 100%; left: 30%;"></div>
+            <div class="connection-beam" style="bottom: 100%; right: 30%;"></div>
+          </div>
+          <div class="layer layer-1">
+            <div class="layer-label">Early Attention Heads</div>
+            <div class="layer-node-grid">
+              <div class="node"></div><div class="node"></div><div class="node"></div>
+              <div class="node"></div><div class="node"></div><div class="node"></div>
+              <div class="node"></div><div class="node"></div><div class="node"></div>
+            </div>
+            <div class="connection-beam" style="bottom: 100%; left: 50%;"></div>
+          </div>
+        </div>
+        <div class="interactive-tooltip">
+           Hover over the network to reveal layers
         </div>
       </div>
     </section>
@@ -295,7 +363,8 @@
         <div class="section-heading reveal">
           <span class="section-kicker">Topics of interest</span>
           <h2>Representative research directions</h2>
-          <p>The scope is intentionally broad across analysis, faithfulness, debugging, editing, and deployment tooling for medical foundation models.</p>
+          <p>The scope is intentionally broad across analysis, faithfulness, debugging, editing, and deployment tooling
+            for medical foundation models.</p>
         </div>
 
         <div class="topic-grid">
@@ -332,7 +401,8 @@
           <article class="topic-card reveal">
             <span class="topic-tag">Deployment</span>
             <h3>Monitoring unsafe states</h3>
-            <p>Interpretability-guided detectors for unreliable predictions and distribution shift during deployment.</p>
+            <p>Interpretability-guided detectors for unreliable predictions and distribution shift during deployment.
+            </p>
           </article>
           <article class="topic-card reveal">
             <span class="topic-tag">Tooling</span>
@@ -348,7 +418,8 @@
         <div class="section-heading reveal">
           <span class="section-kicker">Program</span>
           <h2>Half-day experience</h2>
-          <p>The event is a compact, high-energy workshop with keynote depth, paper spotlights, posters, networking, and community discussion.</p>
+          <p>The event is a compact, high-energy workshop with keynote depth, paper spotlights, posters, networking, and
+            community discussion.</p>
         </div>
 
         <div class="format-grid">
@@ -462,7 +533,8 @@
             </div>
             <div class="program-callout">
               <strong>Presentation policy</strong>
-              <p>All accepted works will be presented as posters, with a subset selected for oral talks based on review quality and topic balance.</p>
+              <p>All accepted works will be presented as posters, with a subset selected for oral talks based on review
+                quality and topic balance.</p>
             </div>
           </aside>
         </div>
@@ -486,19 +558,8 @@
               <span class="speaker-badge">Keynote Speaker</span>
               <h3>Karim Lekadir</h3>
               <p class="speaker-role">ICREA Research Professor, University of Barcelona</p>
-              <p>Research focus includes trustworthy and ethical AI for medicine, with emphasis on robustness, bias and fairness, uncertainty, and clinically reliable translation.</p>
-            </div>
-          </article>
-
-          <article class="speaker-card reveal">
-            <div class="speaker-image-wrap">
-              <img src="assets/images/speakers/vineeth-balasubramanian.jpg" alt="Vineeth N. Balasubramanian" />
-            </div>
-            <div class="speaker-copy">
-              <span class="speaker-badge">Keynote Speaker</span>
-              <h3>Vineeth N. Balasubramanian</h3>
-              <p class="speaker-role">Professor, IIT Hyderabad; Principal Researcher, Microsoft Research India</p>
-              <p>Research spans deep learning and computer vision, with emphasis on multimodal learning, reasoning, and explainable and trustworthy AI.</p>
+              <p>Research focus includes trustworthy and ethical AI for medicine, with emphasis on robustness, bias and
+                fairness, uncertainty, and clinically reliable translation.</p>
             </div>
           </article>
         </div>
@@ -510,7 +571,8 @@
         <div class="section-heading reveal">
           <span class="section-kicker">Organizing team</span>
           <h2>Leadership with strong local presence and cross-career representation</h2>
-          <p>The team spans faculty, postdoctoral researchers, and PhD students, with institutions in the UAE and the UK and multiple organizers based in Abu Dhabi/UAE.</p>
+          <p>The team spans faculty, postdoctoral researchers, and PhD students, with institutions in the UAE and the UK
+            and multiple organizers based in Abu Dhabi/UAE.</p>
         </div>
 
         <div class="filter-bar reveal" role="tablist" aria-label="Organizer filters">
@@ -638,7 +700,8 @@
         <div class="section-heading reveal">
           <span class="section-kicker">Submission & review</span>
           <h2>Two-track submission with rigorous peer review</h2>
-          <p>The workshop uses an OpenReview-based, double-blind review process with clearly differentiated tracks for original work and non-archival contributions.</p>
+          <p>The workshop uses an OpenReview-based, double-blind review process with clearly differentiated tracks for
+            original work and non-archival contributions.</p>
         </div>
 
         <div class="submission-layout">
@@ -675,7 +738,8 @@
               </li>
               <li>
                 <strong>COI safeguards</strong>
-                <span>Conflicted organizers do not handle submissions from the same institution or recent collaborators.</span>
+                <span>Conflicted organizers do not handle submissions from the same institution or recent
+                  collaborators.</span>
               </li>
             </ol>
             <div class="rubric">
@@ -695,17 +759,20 @@
         <div class="section-heading reveal">
           <span class="section-kicker">Community artifacts</span>
           <h2>Outputs designed to outlive the workshop day</h2>
-          <p>MI4MedFM is positioned not only as a venue for papers, but as a catalyst for reusable resources and a sharper community roadmap.</p>
+          <p>MI4MedFM is positioned not only as a venue for papers, but as a catalyst for reusable resources and a
+            sharper community roadmap.</p>
         </div>
 
         <div class="artifact-grid">
           <article class="artifact-card reveal">
             <h3>Open notebooks & baselines</h3>
-            <p>Practical resources to help researchers apply and benchmark mechanistic interpretability methods on MedFMs.</p>
+            <p>Practical resources to help researchers apply and benchmark mechanistic interpretability methods on
+              MedFMs.</p>
           </article>
           <article class="artifact-card reveal">
             <h3>Curated open problems & datasets</h3>
-            <p>A living list of priority research gaps, candidate benchmarks, and clinically grounded evaluation settings.</p>
+            <p>A living list of priority research gaps, candidate benchmarks, and clinically grounded evaluation
+              settings.</p>
           </article>
           <article class="artifact-card reveal">
             <h3>Post-workshop summary report</h3>
@@ -725,25 +792,29 @@
         <div class="faq-grid reveal">
           <details open>
             <summary>Who should attend MI4MedFM?</summary>
-            <p>Researchers in medical imaging and clinical AI, clinicians, machine learning interpretability and safety researchers, and industry practitioners working with medical foundation models.</p>
+            <p>Researchers in medical imaging and clinical AI, clinicians, machine learning interpretability and safety
+              researchers, and industry practitioners working with medical foundation models.</p>
           </details>
           <details>
             <summary>What kinds of submissions fit the workshop?</summary>
-            <p>Original proceedings-track papers, as well as non-archival extended abstracts, previously published work, or work currently under review.</p>
+            <p>Original proceedings-track papers, as well as non-archival extended abstracts, previously published work,
+              or work currently under review.</p>
           </details>
           <details>
             <summary>How will accepted work be presented?</summary>
-            <p>All accepted works will appear as posters, with a subset selected for oral presentation based on review quality and topic balance.</p>
+            <p>All accepted works will appear as posters, with a subset selected for oral presentation based on review
+              quality and topic balance.</p>
           </details>
           <details>
             <summary>What makes this workshop different from other MedFM events?</summary>
-            <p>Its focus is on internal mechanisms, clinical validation, and intervention-ready insight rather than only model development, benchmarking, or post-hoc explanations.</p>
+            <p>Its focus is on internal mechanisms, clinical validation, and intervention-ready insight rather than only
+              model development, benchmarking, or post-hoc explanations.</p>
           </details>
         </div>
       </div>
     </section>
 
-    </main>
+  </main>
 
   <footer class="site-footer">
     <div class="container footer-shell">
@@ -761,4 +832,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>
