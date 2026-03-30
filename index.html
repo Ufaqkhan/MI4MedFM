@@ -12,7 +12,8 @@
   <link rel="preload" as="image" href="assets/images/speakers/karim-lekadir.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="interactive.css" />
 </head>
@@ -35,12 +36,15 @@
 
       <nav class="site-nav" id="site-nav" aria-label="Primary">
         <a href="#overview">Overview</a>
+        <a href="#news">News</a>
         <a href="#pillars">Focus</a>
         <a href="#topics">Topics</a>
         <a href="#program">Program</a>
         <a href="#speakers">Speaker</a>
         <a href="#submission">Call for Papers</a>
         <a href="#organizers">Organizers</a>
+        <a href="#faq-contact">Queries</a>
+        <img src="assets/images/brand/miccai2026-logo-new.png" alt="MICCAI 2026" class="nav-miccai-logo" />
       </nav>
     </div>
   </header>
@@ -51,46 +55,26 @@
     <!-- ╚══════════════════════════════════════════════════════════╝ -->
     <section class="hero section">
       <canvas id="hero-canvas" aria-hidden="true"></canvas>
-      <div class="container hero-grid">
-        <div class="hero-copy reveal">
-          <div class="hero-badges">
-            <span class="eyebrow">MICCAI 2026 Workshop</span>
-            <img src="assets/images/brand/miccai2026-logo.png" alt="MICCAI 2026" class="miccai-badge" />
-          </div>
-          <h1>Mechanistic Interpretability for <span>Medical Foundation Models</span></h1>
-          <p class="hero-subtitle">
-            Understanding how medical foundation models compute, where they fail, and how
-            mechanistic interpretability can make them safer and more reliable for clinical deployment.
+      <div class="container hero-centered">
+
+
+        <div class="hero-copy-centered reveal">
+          <h1><span class="interactive-title">MI4MedFM</span> | MICCAI 2026</h1>
+          <h2 class="hero-title-sub">Mechanistic Interpretability for Medical Foundation Models</h2>
+
+          <p class="hero-subtitle-centered">
+            MI4MedFM is a workshop held in conjunction with MICCAI 2026. It focuses on understanding how medical
+            foundation models compute, where they fail, and how mechanistic interpretability can make them safer, more
+            robust, and more reliable for clinical deployment.
           </p>
 
-          <div class="hero-meta">
-            <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Abu Dhabi, UAE</span>
-            <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> October 2026</span>
-            <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 2-Hour Focused Program</span>
-          </div>
-
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#submission">Submit a Paper</a>
-            <a class="btn btn-secondary" href="#program">See the Program</a>
-          </div>
-
-          <div class="hero-points">
-            <article>
-              <strong>Beyond Post-hoc XAI</strong>
-              <p>Move from visual explanations to internal, testable model mechanisms.</p>
-            </article>
-            <article>
-              <strong>Clinically Grounded</strong>
-              <p>Methods tied to medical imaging, multimodal AI, and trustworthy deployment.</p>
-            </article>
-            <article>
-              <strong>Outcome-Oriented</strong>
-              <p>Connect analysis to validation, debugging, and safer intervention strategies.</p>
-            </article>
+          <div class="hero-actions-centered">
+            <a class="btn btn-primary" href="#submission">Submit a paper</a>
+            <a class="btn btn-secondary-outline" href="#program">View program</a>
           </div>
         </div>
 
-        <div class="hero-visual reveal">
+        <div class="hero-visual-centered reveal">
           <div class="hero-viz-card glass">
             <div class="viz-header">
               <span class="mini-pill">How MI4MedFM views Medical Foundation Models</span>
@@ -103,7 +87,10 @@
                 <span>Medical Image</span>
               </div>
               <div class="viz-arrow">
-                <svg width="48" height="24" viewBox="0 0 48 24"><path d="M0 12h42M36 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <svg width="48" height="24" viewBox="0 0 48 24">
+                  <path d="M0 12h42M36 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
               </div>
               <div class="viz-stage viz-stage-model">
                 <div class="viz-model-block">
@@ -114,17 +101,27 @@
                     <div class="viz-layer-bar"></div>
                   </div>
                   <div class="viz-magnifier">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/></svg>
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2.5">
+                      <circle cx="11" cy="11" r="7" />
+                      <line x1="16.5" y1="16.5" x2="21" y2="21" />
+                    </svg>
                   </div>
                 </div>
                 <span>Internal Analysis</span>
               </div>
               <div class="viz-arrow">
-                <svg width="48" height="24" viewBox="0 0 48 24"><path d="M0 12h42M36 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <svg width="48" height="24" viewBox="0 0 48 24">
+                  <path d="M0 12h42M36 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
               </div>
               <div class="viz-stage">
                 <div class="viz-icon viz-icon-output">
-                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 12l2 2 4-4" />
+                    <circle cx="12" cy="12" r="10" />
+                  </svg>
                 </div>
                 <span>Prediction + Mechanism</span>
               </div>
@@ -154,6 +151,35 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ╔══════════════════════════════════════════════════════════╗ -->
+    <!-- ║                       NEWS SECTION                      ║ -->
+    <!-- ╚══════════════════════════════════════════════════════════╝ -->
+    <section class="section muted-section" id="news">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-kicker">Updates</span>
+          <h2>News</h2>
+        </div>
+        <div class="news-list reveal">
+          <article class="news-item">
+            <div class="news-date">Mar 30, 2026</div>
+            <div class="news-content">
+              <strong>Website Launched</strong>
+              <p>The official website for the MI4MedFM workshop at MICCAI 2026 is now live. Call for papers and
+                important dates have been announced.</p>
+            </div>
+          </article>
+          <article class="news-item">
+            <div class="news-date">Mar 25, 2026</div>
+            <div class="news-content">
+              <strong>Workshop Accepted</strong>
+              <p>MI4MedFM has been officially accepted as a workshop at MICCAI 2026 in Abu Dhabi.</p>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -190,11 +216,13 @@
             </article>
             <article>
               <strong>Format</strong>
-              <p>Keynote talk, contributed oral presentations, poster session, and networking — in a focused 2-hour program.</p>
+              <p>Keynote talk, contributed oral presentations, poster session, and networking — in a focused 2-hour
+                program.</p>
             </article>
             <article>
               <strong>Value</strong>
-              <p>A clear bridge from internal model analysis to evidence, intervention, and trustworthy clinical use.</p>
+              <p>A clear bridge from internal model analysis to evidence, intervention, and trustworthy clinical use.
+              </p>
             </article>
           </div>
         </aside>
@@ -268,17 +296,29 @@
           <div class="layer layer-3">
             <div class="layer-label">Final Output & Concepts</div>
             <div class="layer-node-grid">
-              <div class="node"></div><div class="node"></div><div class="node"></div>
-              <div class="node"></div><div class="node"></div><div class="node"></div>
-              <div class="node"></div><div class="node"></div><div class="node"></div>
+              <div class="node"></div>
+              <div class="node"></div>
+              <div class="node"></div>
+              <div class="node"></div>
+              <div class="node"></div>
+              <div class="node"></div>
+              <div class="node"></div>
+              <div class="node"></div>
+              <div class="node"></div>
             </div>
           </div>
           <div class="layer layer-2">
             <div class="layer-label">Sparse Autoencoder Features</div>
             <div class="layer-node-grid">
-              <div class="node"></div><div class="node"></div><div class="node"></div>
-              <div class="node"></div><div class="node"></div><div class="node"></div>
-              <div class="node"></div><div class="node"></div><div class="node"></div>
+              <div class="node"></div>
+              <div class="node"></div>
+              <div class="node"></div>
+              <div class="node"></div>
+              <div class="node"></div>
+              <div class="node"></div>
+              <div class="node"></div>
+              <div class="node"></div>
+              <div class="node"></div>
             </div>
             <div class="connection-beam" style="bottom: 100%; left: 30%;"></div>
             <div class="connection-beam" style="bottom: 100%; right: 30%;"></div>
@@ -286,9 +326,15 @@
           <div class="layer layer-1">
             <div class="layer-label">Early Attention Heads</div>
             <div class="layer-node-grid">
-              <div class="node"></div><div class="node"></div><div class="node"></div>
-              <div class="node"></div><div class="node"></div><div class="node"></div>
-              <div class="node"></div><div class="node"></div><div class="node"></div>
+              <div class="node"></div>
+              <div class="node"></div>
+              <div class="node"></div>
+              <div class="node"></div>
+              <div class="node"></div>
+              <div class="node"></div>
+              <div class="node"></div>
+              <div class="node"></div>
+              <div class="node"></div>
             </div>
             <div class="connection-beam" style="bottom: 100%; left: 50%;"></div>
           </div>
@@ -323,7 +369,8 @@
           <article class="topic-card">
             <span class="topic-label">Faithfulness</span>
             <h3>Clinically meaningful validation</h3>
-            <p>Tests that determine whether discovered mechanisms align with trusted medical concepts and downstream behavior.</p>
+            <p>Tests that determine whether discovered mechanisms align with trusted medical concepts and downstream
+              behavior.</p>
             <div class="topic-bar"><span style="width: 82%"></span></div>
           </article>
           <article class="topic-card">
@@ -335,19 +382,22 @@
           <article class="topic-card">
             <span class="topic-label">Intervention</span>
             <h3>Editing, steering, and control</h3>
-            <p>Using mechanism-level insight to improve robustness, correct behavior, and reduce harmful failure modes.</p>
+            <p>Using mechanism-level insight to improve robustness, correct behavior, and reduce harmful failure modes.
+            </p>
             <div class="topic-bar"><span style="width: 84%"></span></div>
           </article>
           <article class="topic-card">
             <span class="topic-label">Deployment</span>
             <h3>Monitoring unsafe states in practice</h3>
-            <p>Interpretability-guided monitoring and uncertainty-aware signals for safer clinical deployment settings.</p>
+            <p>Interpretability-guided monitoring and uncertainty-aware signals for safer clinical deployment settings.
+            </p>
             <div class="topic-bar"><span style="width: 74%"></span></div>
           </article>
           <article class="topic-card">
             <span class="topic-label">Tooling</span>
             <h3>Scalable, usable open infrastructure</h3>
-            <p>Frameworks and workflows that make mechanistic analysis practical for medical imaging and multimodal MedFMs.</p>
+            <p>Frameworks and workflows that make mechanistic analysis practical for medical imaging and multimodal
+              MedFMs.</p>
             <div class="topic-bar"><span style="width: 76%"></span></div>
           </article>
         </div>
@@ -363,7 +413,8 @@
           <span class="section-kicker">Program</span>
           <h2>Workshop Program</h2>
           <p>
-            A focused 2-hour program featuring a keynote, oral presentations, and an interactive poster session with networking.
+            A focused 2-hour program featuring a keynote, oral presentations, and an interactive poster session with
+            networking.
           </p>
         </div>
 
@@ -379,7 +430,8 @@
             </article>
             <article>
               <strong>Poster & Networking</strong>
-              <p>Poster-first visibility, direct discussion, and opportunities for clinicians and ML researchers to connect.</p>
+              <p>Poster-first visibility, direct discussion, and opportunities for clinicians and ML researchers to
+                connect.</p>
             </article>
           </div>
 
@@ -467,7 +519,13 @@
           <div class="dates-grid">
             <article class="date-card">
               <div class="date-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
+                  <polyline points="14 2 14 8 20 8" />
+                  <line x1="16" y1="13" x2="8" y2="13" />
+                  <line x1="16" y1="17" x2="8" y2="17" />
+                  <polyline points="10 9 9 9 8 9" />
+                </svg>
               </div>
               <div>
                 <strong>Paper Submission Deadline</strong>
@@ -476,16 +534,22 @@
             </article>
             <article class="date-card">
               <div class="date-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+                  <polyline points="22 4 12 14.01 9 11.01" />
+                </svg>
               </div>
               <div>
-                <strong>Notification of Acceptance</strong>
+                <strong>Author Notification</strong>
                 <p>TBA</p>
               </div>
             </article>
             <article class="date-card">
               <div class="date-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7" />
+                  <path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z" />
+                </svg>
               </div>
               <div>
                 <strong>Camera-Ready Deadline</strong>
@@ -494,11 +558,16 @@
             </article>
             <article class="date-card highlight">
               <div class="date-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                  <line x1="16" y1="2" x2="16" y2="6" />
+                  <line x1="8" y1="2" x2="8" y2="6" />
+                  <line x1="3" y1="10" x2="21" y2="10" />
+                </svg>
               </div>
               <div>
                 <strong>Workshop Date</strong>
-                <p>October 2026</p>
+                <p>TBA</p>
               </div>
             </article>
           </div>
@@ -511,7 +580,8 @@
               <span class="track-number">Track 1</span>
               <h3>Proceedings Track</h3>
             </div>
-            <p class="track-desc">Original, unpublished research intended for the MICCAI satellite-events LNCS proceedings.</p>
+            <p class="track-desc">Original, unpublished research intended for the MICCAI satellite-events LNCS
+              proceedings.</p>
             <ul class="track-details">
               <li><strong>Format:</strong> 8–10 pages (LNCS style) + references</li>
               <li><strong>Review:</strong> Double-blind peer review</li>
@@ -523,7 +593,8 @@
               <span class="track-number">Track 2</span>
               <h3>Non-Archival Track</h3>
             </div>
-            <p class="track-desc">Extended abstracts, previously published work, or work currently under review elsewhere.</p>
+            <p class="track-desc">Extended abstracts, previously published work, or work currently under review
+              elsewhere.</p>
             <ul class="track-details">
               <li><strong>Format:</strong> 4-page extended abstract + references</li>
               <li><strong>Review:</strong> Light review for relevance and quality</li>
@@ -538,32 +609,81 @@
             <h3>Submission Guidelines</h3>
             <div class="guidelines-grid">
               <div class="guideline-item">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
+                  <polyline points="14 2 14 8 20 8" />
+                </svg>
                 <div>
                   <strong>Template</strong>
                   <p>Use the official Springer LNCS LaTeX template</p>
                 </div>
               </div>
               <div class="guideline-item">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M23 21v-2a4 4 0 00-3-3.87" />
+                  <path d="M16 3.13a4 4 0 010 7.75" />
+                </svg>
                 <div>
                   <strong>Review Process</strong>
                   <p>Double-blind with conflict-of-interest safeguards</p>
                 </div>
               </div>
               <div class="guideline-item">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6" />
+                  <polyline points="8 6 2 12 8 18" />
+                </svg>
                 <div>
                   <strong>Evaluation Criteria</strong>
                   <p>Relevance, rigor, clarity, validation, and reproducibility</p>
                 </div>
               </div>
               <div class="guideline-item">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10" />
+                  <line x1="2" y1="12" x2="22" y2="12" />
+                  <path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" />
+                </svg>
                 <div>
                   <strong>Submission Portal</strong>
                   <p>Link to CMT / OpenReview — TBA</p>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Topics Summary -->
+        <div class="topics-summary reveal" style="margin-top: 2rem;">
+          <div class="guidelines-card glass">
+            <h3>Topics include, but are not limited to:</h3>
+            <div class="track-details"
+              style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-top: 1rem;">
+              <div
+                style="padding: 1rem; display: flex; align-items: flex-start; gap: 0.8rem; background: rgba(248, 250, 254, 0.8); border: 1px solid rgba(15, 23, 42, 0.05); border-radius: 12px;">
+                <span style="color: var(--primary); font-size: 1.2rem; line-height: 1;">•</span>
+                <span style="font-size: 0.9rem; color: var(--muted-strong);"><strong>Internal Mechanisms:</strong>
+                  Sparse autoencoders, circuit analysis, feature discovery</span>
+              </div>
+              <div
+                style="padding: 1rem; display: flex; align-items: flex-start; gap: 0.8rem; background: rgba(248, 250, 254, 0.8); border: 1px solid rgba(15, 23, 42, 0.05); border-radius: 12px;">
+                <span style="color: var(--primary); font-size: 1.2rem; line-height: 1;">•</span>
+                <span style="font-size: 0.9rem; color: var(--muted-strong);"><strong>Clinical Validation:</strong>
+                  Faithfulness, concept alignment, clinically grounded benchmarks</span>
+              </div>
+              <div
+                style="padding: 1rem; display: flex; align-items: flex-start; gap: 0.8rem; background: rgba(248, 250, 254, 0.8); border: 1px solid rgba(15, 23, 42, 0.05); border-radius: 12px;">
+                <span style="color: var(--primary); font-size: 1.2rem; line-height: 1;">•</span>
+                <span style="font-size: 0.9rem; color: var(--muted-strong);"><strong>Failure Modes:</strong> Tracing
+                  shortcuts, multimodal hallucinations, bias detection</span>
+              </div>
+              <div
+                style="padding: 1rem; display: flex; align-items: flex-start; gap: 0.8rem; background: rgba(248, 250, 254, 0.8); border: 1px solid rgba(15, 23, 42, 0.05); border-radius: 12px;">
+                <span style="color: var(--primary); font-size: 1.2rem; line-height: 1;">•</span>
+                <span style="font-size: 0.9rem; color: var(--muted-strong);"><strong>Interventions:</strong> Feature
+                  steering, debugging, robust editing, inference monitoring</span>
               </div>
             </div>
           </div>
@@ -705,6 +825,51 @@
       </div>
     </section>
 
+    <!-- ╔══════════════════════════════════════════════════════════╗ -->
+    <!-- ║                     FAQ & CONTACT                       ║ -->
+    <!-- ╚══════════════════════════════════════════════════════════╝ -->
+    <section class="section" id="faq-contact">
+      <div class="container faq-shell">
+        <div class="section-heading reveal center-heading">
+          <span class="section-kicker">Queries</span>
+          <h2>FAQ & Contact</h2>
+          <p>Common questions about the workshop and how to reach the organizing committee.</p>
+        </div>
+
+        <div class="faq-grid reveal">
+          <div class="faq-list">
+            <details class="faq-item" open>
+              <summary>When is the workshop taking place?</summary>
+              <p>The MI4MedFM workshop is part of the MICCAI 2026 satellite events in Abu Dhabi. The exact date in
+                October is TBA.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Will proceedings be published?</summary>
+              <p>Yes. Submissions accepted under Track 1 (Proceedings Track) will be published in the official Springer
+                LNCS MICCAI 2026 Workshop Proceedings.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Can I submit previously published work?</summary>
+              <p>For Track 1 (Proceedings Track), submissions must be original and unpublished. For Track 2
+                (Non-Archival Track), you are welcome to submit extended abstracts of recently published work or work
+                currently under review elsewhere.</p>
+            </details>
+          </div>
+
+          <div class="contact-card glass">
+            <h3>Contact Us</h3>
+            <p>If you have any further questions regarding the workshop, submission guidelines, or sponsorship
+              opportunities, please feel free to email the organizing committee.</p>
+            <a href="mailto:mi4medfm.info@gmail.com" class="btn btn-primary"
+              style="margin-top: 1rem; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.2rem;">
+              <span>Email Organizers</span>
+              <span style="font-size: 0.85rem; font-weight: 500; opacity: 0.9;">mi4medfm.info@gmail.com</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer class="site-footer">
@@ -715,7 +880,7 @@
         <p class="footer-venue">A workshop at MICCAI 2026 · Abu Dhabi, UAE</p>
       </div>
       <div class="footer-right">
-        <img class="footer-miccai" src="assets/images/brand/miccai2026-logo.png" alt="MICCAI 2026" />
+        <img class="footer-miccai" src="assets/images/brand/miccai2026-logo-new.png" alt="MICCAI 2026" />
         <p class="footer-copy">&copy; 2026 MI4MedFM. All rights reserved.</p>
       </div>
     </div>
